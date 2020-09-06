@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://openfaas.kumarutsavanand.com
+functions:
+  hello:
+    lang: go-multiarch
+    handler: ./hello
+    image: utsavanand2/hello:latest
+
