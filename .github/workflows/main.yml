@@ -24,7 +24,7 @@ jobs:
         run: |
           docker run --rm -v `pwd`:`pwd` -w `pwd` \
           openfaas/faas-cli:latest-root \
-          template pull https://github.com/alexellis/multiarch-templates
+          template store pull golang-http
       - 
         name: Running faas-cli skrinkwrap build
         run: |

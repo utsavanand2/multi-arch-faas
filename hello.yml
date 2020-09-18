@@ -4,7 +4,7 @@ provider:
   gateway: https://openfaas.kumarutsavanand.com
 functions:
   hello:
-    lang: go-multiarch
+    lang: golang-http
     handler: ./hello
     image: utsavanand2/hello:latest
 
